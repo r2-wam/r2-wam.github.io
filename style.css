@@ -24,6 +24,7 @@ main{max-width:1520px;padding:0 40px}
 .authors{font-size:22px;line-height:1.8;margin:26px 0 8px;text-wrap:balance}
 .affiliations{font-size:19px;line-height:1.8;text-wrap:balance}
 .authors sup,.affiliations sup{font-size:.65em}
+.corresponding-note{margin-top:8px;font-size:16px}
 .button{font-size:18px;padding:13px 25px}
 .eyebrow{font-size:18px;letter-spacing:1.4px}
 .section-intro{font-size:19px;line-height:1.7}
@@ -57,8 +58,8 @@ footer p,footer>a:last-child{font-size:16px}
 .results-subheading,.feedback-analysis>h3{font-size:30px;line-height:1.3;margin:0 0 24px}
 .simulation-analysis,.result-takeaway{font-size:19px;line-height:1.75;color:#5f596d;max-width:1100px;margin:24px 0 0}
 .feedback-analysis{margin-top:48px;padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.feedback-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-.feedback-grid article{min-width:0}
+.feedback-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto auto;column-gap:32px}
+.feedback-grid article{display:grid;grid-row:span 3;grid-template-rows:subgrid;min-width:0}
 .feedback-grid h4{font-size:23px;line-height:1.4;margin:0 0 12px}
 .feedback-grid p{font-size:18px;line-height:1.65;color:#5f596d;margin:0 0 20px}
 .feedback-grid table{width:100%;border-collapse:collapse;font-size:17px;font-variant-numeric:tabular-nums}
@@ -68,7 +69,7 @@ footer p,footer>a:last-child{font-size:16px}
 .feedback-grid thead th{font-size:15px;color:var(--muted);font-weight:600}
 .feedback-grid .ours{background:#eee8f6}
 .feedback-grid .ours th:first-child{padding-left:10px;font-weight:600}
-@media(max-width:760px){.feedback-grid{grid-template-columns:1fr;gap:30px}.feedback-analysis{padding:30px 0}.feedback-grid table{font-size:15px}.feedback-grid th,.feedback-grid td{padding:12px 6px}.feedback-grid thead th{font-size:14px}}
+@media(max-width:760px){.feedback-grid{grid-template-columns:1fr;grid-template-rows:none;gap:30px}.feedback-grid article{display:block;grid-row:auto}.feedback-analysis{padding:30px 0}.feedback-grid table{font-size:15px}.feedback-grid th,.feedback-grid td{padding:12px 6px}.feedback-grid thead th{font-size:14px}}
 @media(max-width:600px){.results-subheading,.feedback-analysis>h3{font-size:26px}.simulation-analysis,.result-takeaway{font-size:18px}}
 .real-world-analysis{margin-top:48px}
 .real-world-analysis h3{font-size:30px;line-height:1.3;margin:0 0 20px}
